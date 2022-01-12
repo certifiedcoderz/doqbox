@@ -1,0 +1,54 @@
+############################################### /If Write Permission On COmpile
+
+ chmod -R u+rX /home/cali/www/smart_biz/kit_diamond_go/mobile/kit_droid/www/star_cor/kit/
+
+
+
+
+#######################################//Android Manifest
+
+########### for internet access on app
+#//application level
+android:usesCleartextTraffic="true"
+
+############ ads
+<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-2825659491981664~1735349461" />
+
+
+########### permisions
+#//application level
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+##########################################//Plugins
+--- required
+- cordova-plugin-camera
+- cordova-plugin-device
+- cordova-plugin-file
+- cordova-plugin-file-transfer
+- cordova-plugin-whitelist
+- cordova-promise-polyfill
+- cordova-plugin-crop
+
+--- optional
+- cordova-plugin-media
+- cordova-admob-sdk
+- cordova-plugin-admob-free
+
+
+#########################//Commands
+- cordova plugin save -- write plugins to config.xml
+
+
+########################################//Config.xml
+<plugin name="cordova-plugin-whitelist" spec="1" />
+<plugin name="cordova-plugin-camera" spec="~4.1.0" />
+<plugin name="cordova-plugin-device" spec="~2.0.3" />
+<plugin name="cordova-plugin-file" spec="~6.0.2" />
+<plugin name="cordova-plugin-crop" spec="~0.3.1" />
+<plugin name="cordova-promise-polyfill" spec="~0.0.2" />
+<plugin name="cordova-plugin-file-transfer" spec="~1.7.1" />
+

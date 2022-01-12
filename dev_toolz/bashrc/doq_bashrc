@@ -1,0 +1,113 @@
+### ==========================================
+# Title: DOQBox Bashrc File
+# Author: #Certified CoderZ
+# Date:   6 Jan 2022
+### ==========================================
+
+##Global Keys START ###
+export PROJECTZ_DIR=$HOME/www/projectz
+export NODE_ENV=test # test,stage,prod
+SCRIPT_DIR="scriptz";
+##Global Keys END ###
+
+### ALIAS DIR START ###
+alias 9_go_projectz='cd ${PROJECTZ_DIR}'
+### ALIAS DIR END ###
+
+### ALIAS APP START ###
+alias 9_app_running_list='sudo netstat -ntlp | grep LISTEN';
+alias 9_app_start='nodemon bin/www'
+alias 9_app_stop_all='killall node'
+### ALIAS APP END ###
+
+### ALIAS CONFIG START ###
+alias 9_config_bashrc='vi ~/.bashrc'
+alias 9_config_vim='vi ~/.vimrc'
+### ALIAS CONFIG END ###
+
+### ALIAS OPEN START ###
+alias 9_open_sublime='subl '
+alias 9_open_blogreader='newsboat'
+alias 9_open_mongoshell="sudo mongo --shell --port 27019"
+alias 9_open_diff_file='diff --side-by-side';
+alias 9_open_diff_folder='git diff --name-only ';
+alias 9_open_unzip="unzip "
+alias 9_open_gzip="tar -xzvf "
+alias 9_open_bz2="tar -xjvf "
+alias 9_open_calc='gnome-calculator &';
+alias 9_open_calendar='cal -A 5';
+### ALIAS OPEN END ###
+
+### ALIAS GIT START ###
+alias 9_git_init='bash ${SCRIPT_DIR}/dq_git_init.sh';
+alias 9_git_config='bash ${SCRIPT_DIR}/dq_git_config.sh';
+alias 9_git_commit='bash ${SCRIPT_DIR}/dq_git_commit.sh';
+alias 9_git_push='bash ${SCRIPT_DIR}/dq_git_push.sh';
+alias 9_git_pull='bash ${SCRIPT_DIR}/dq_git_pull.sh';
+alias 9_git_reset='bash ${SCRIPT_DIR}/dq_git_reset_cache.sh';
+### ALIAS GIT END ###
+
+### ALIAS EC2 START ###
+alias 9_ec2_connect='bash ${SCRIPT_DIR}/dq_ec2_connect.sh';
+alias 9_ec2_push='bash ${SCRIPT_DIR}/dq_ec2_push.sh';
+alias 9_ec2_deploy='bash ${SCRIPT_DIR}/dq_ec2_deploy.sh';
+alias 9_ec2_test_push='bash ${SCRIPT_DIR}/dq_ec2_test_push.sh';
+### ALIAS EC2 END ###
+
+### ALIAS MONGO START ###
+alias 9_mongo_dump='bash ${SCRIPT_DIR}/dq_mongo_dump.sh';
+alias 9_mongo_list_dump='bash ${SCRIPT_DIR}/dq_mongo_list_dump.sh';
+alias 9_mongo_restore='bash ${SCRIPT_DIR}/dq_mongo_restore.sh';
+alias 9_mongo_shell='mongo --shell --port 27019';
+alias 9_mongo_start="sudo mongod --fork --config /etc/mongod.conf"
+### ALIAS EC2 END ###
+
+### ALIAS OTHER START ###
+alias 9_kill_beep='set bell-style none';
+alias 9_watch='watch -n 1 cat ';
+alias 9_kill_app='kill -9 ';
+alias 9_kill_all_node='killall node';
+alias 9_kill_all_app='killall ';
+alias 9_open_port_list='sudo netstat -ntlp | grep LISTEN';
+alias 9_search_filez='bash ${SCRIPT_DIR}/dq_search_filez.sh';
+alias 9_redis_start="su -c 'service redis-server start'"
+### ALIAS OTHER END ###
+
+### ALIAS TEST START ###
+alias 9_test_server_ready='bash kit_run_app server_ready'
+alias 9_test_server_mongo_connect='bash kit_run_app server_mongo_connect'
+alias 9_test_app_user_update='bash kit_run_app app_user_update'
+alias 9_test_app_user_get='bash kit_run_app app_user_get'
+alias 9_test_app_stage_update='bash kit_run_app app_stage_update'
+alias 9_test_server_ping='bash kit_run_app server_ping'
+alias 9_test_server_mail_send='bash kit_run_app server_mail_send'
+alias 9_test_run='bash kit_run_app run'
+alias 9_test_app_bucket_update='bash kit_run_app app_bucket_update'
+
+alias 9_test_mongo_connect='bash kit_run_mongo test_mongo_connect'
+alias 9_test_mongo_flush='bash kit_run_mongo test_mongo_flush'
+alias 9_test_mongo_get_item_cache='bash kit_run_mongo test_mongo_get_item_cache'
+alias 9_test_mongo_get_sql_cache='bash kit_run_mongo test_mongo_get_sql_cache'
+alias 9_test_mongo_get_page='bash kit_run_mongo test_mongo_get_page'
+alias 9_test_mongo_get_sub_page='bash kit_run_mongo test_mongo_get_sub_page'
+alias 9_test_mongo_get_product='bash kit_run_mongo test_mongo_get_product'
+alias 9_test_mongo_get_service='bash kit_run_mongo test_mongo_get_service'
+alias 9_test_mongo_get_service_list='bash kit_run_mongo test_mongo_get_service_list'
+alias 9_test_mongo_get_blog_post='bash kit_run_mongo test_mongo_get_blog_post'
+alias 9_test_mongo_get_blog_post_list='bash kit_run_mongo test_mongo_get_blog_post_list'
+alias 9_test_mongo_get_product_list='bash kit_run_mongo test_mongo_get_product_list'
+alias 9_test_mongo_get_sql_paging='bash kit_run_mongo test_mongo_get_sql_paging'
+alias 9_test_mongo_drop='bash kit_run_mongo test_mongo_drop'
+alias 9_test_mongo_rename='bash kit_run_mongo test_mongo_rename'
+alias 9_test_mongo_get_item_db='bash kit_run_mongo test_mongo_get_item_db'
+alias 9_test_mongo_insert_item='bash kit_run_mongo test_mongo_insert_item'
+alias 9_test_mongo_insert_list='bash kit_run_mongo test_mongo_insert_list'
+alias 9_test_mongo_delete_sql='bash kit_run_mongo test_mongo_delete_sql'
+alias 9_test_mongo_delete_item='bash kit_run_mongo test_mongo_delete_item'
+### ALIAS TEST END ###
+
+### OTHER START ###
+set bell-style none
+xset b off # turn beep sound off
+echo xset b off >> ~/.xession # turn beep sound off 2
+### OTHER END ###

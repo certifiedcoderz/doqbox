@@ -1,0 +1,8 @@
+git clone https://github.com/majutsushi/tagbar.git
+git clone https://github.com/kien/ctrlp.vim.git
+git clone https://github.com/ervandew/supertab.git
+git clone https://github.com/pangloss/vim-javascript.git
+git clone https://github.com/jelera/vim-javascript-syntax.git
+git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/pangloss/vim-javascript
+git clone https://github.com/Lokaltog/vim-powerline.git

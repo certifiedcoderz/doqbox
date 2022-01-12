@@ -1,0 +1,116 @@
+/////////////////////////////////////////////////////start
+andriod debian cordova setup
+https://studiolacosanostra.github.io/2019/07/29/Cordova-Setup-Android-SDK-on-Ubuntu/
+
+
+
+// Setup Android Fresh
+
+
+//1
+Download the latest Java JDK 8 from Oracle
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+https://software999.s3.amazonaws.com/jdk-8u261-linux-x64.tar.gz
+$ sudo apt-get remove openjdk-*
+mkdir -p /user/local/java
+tar xvzf jdk-8u261-linux-x64.tar.gz
+mv jdk1.8.0_261 /usr/local/java
+
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_231/bin/java" 0
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_231/bin/javac" 0
+sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_231/bin/java
+sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_231/bin/javac
+
+# Check updated locations
+update-alternatives --list java
+update-alternatives --list javac
+
+#Check java version
+java -version
+
+//2
+Android SDK Build Tools
+http://dl-ssl.google.com/android/repository/tools_r25.2.5-linux.zip
+https://software999.s3.amazonaws.com/tools_r25.2.5-linux.zip
+
+//3
+Gradle
+https://gradle.org/install/#manually
+https://services.gradle.org/distributions/gradle-6.5.1-bin.zip
+
+//4
+# Edit .bashrc
+export JAVA_HOME=/usr/local/java/jdk1.8.0_261
+export PATH=${PATH}:"/usr/lib/jvm/java-11-openjdk-amd64/bin"
+export ANDROID_SDK_ROOT=/home/user/www/3rdparty/25.2.5
+export ANDROID_HOME=/home/user/www/3rdparty/25.2.5
+export PATH=${PATH}:/home/user/www/3rdparty/25.2.5/tools
+export PATH=${PATH}:/home/user/www/3rdparty/25.2.5/tools/bin
+export GRADLE_HOME=/home/user/www/3rdparty/25.2.5/gradle-6.2.2/bin/
+
+//7.27 on s1
+export JAVA_HOME=/usr/local/java/jdk1.8.0_261
+export PATH=${PATH}:"/usr/lib/jvm/jdk1.8.0_261/bin"
+export ANDROID_SDK_ROOT=/home/user/www/3rdparty/tools
+export ANDROID_HOME=/home/admin/www/3rdparty/tools
+export PATH=${PATH}:/home/admin/www/3rdparty/tools
+export PATH=${PATH}:/home/admin/www/3rdparty/gradle/bin
+export GRADLE_HOME=/home/admin/www/3rdparty/gradle/bin
+
+
+
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_261/
+export $PATH:$HOME/bin:$JAVA_HOME/bin
+export ANDROID_SDK_ROOT=/home/user/www/3rdparty/tools
+export ANDROID_HOME=/home/user/www/3rdparty/tools
+export PATH=${PATH}:/home/user/www/3rdparty/tools
+export PATH=${PATH}:/home/user/www/3rdparty/tools/bin
+export GRADLE_HOME=/home/user/www/3rdparty/gradle/bin/
+
+
+JAVA_HOME=/usr/local/java/jdk1.8.0_261
+
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export PATH
+export ANDROID_SDK_ROOT=/home/user/www/3rdparty/tools
+export ANDROID_HOME=/home/user/www/3rdparty/tools
+export PATH=${PATH}:/home/user/www/3rdparty/tools
+export PATH=${PATH}:/home/user/www/3rdparty/gradle/bin
+export GRADLE_HOME=/home/user/www/3rdparty/gradle/bin
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_261/bin/java" 0
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_261/bin/javac" 0
+sudo update-alternatives --set java /usr/local/java/jdk1.8.0_261/bin/java
+sudo update-alternatives --set javac /usr/local/java/jdk1.8.0_261/bin/javac
+
+# Check updated locations
+update-alternatives --list java
+update-alternatives --list javac
+
+#Check java version
+java -version
+
+
+
+
+
+
+
+
+//5
+Zip Align For Compiling
+SDK Build Tools
+https://dl.google.com/android/repository/build-tools_r30-rc1-linux.zip
+
+
+
+
+//Links
+https://androidsdkmanager.azurewebsites.net/Buildtools
+
+
+
+
