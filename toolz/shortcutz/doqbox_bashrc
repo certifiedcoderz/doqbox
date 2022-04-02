@@ -46,6 +46,7 @@ alias 9_git_push_branch='bash ${SCRIPT_DIR}/dq_git_push_branch.sh';
 alias 9_git_push_master='bash ${SCRIPT_DIR}/dq_git_push_master.sh';
 alias 9_git_pull='bash ${SCRIPT_DIR}/dq_git_pull.sh';
 alias 9_git_reset='bash ${SCRIPT_DIR}/dq_git_reset_cache.sh';
+alias 9_git_hub_test='ssh -T git@github.com';
 ### ALIAS GIT END ###
 
 ### ALIAS EC2 START ###
