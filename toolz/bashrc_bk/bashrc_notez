@@ -1,0 +1,32 @@
+### USER DIR START ###
+alias 9_go_home='cd ~/www'
+alias 9_go_downloadz='cd ~/Downloads';
+
+alias 9_go_documents='cd ~/Documents';
+alias 9_go_media='cd ~/media';
+alias 9_go_nodules='cd ~/www/node_modules';
+
+alias 9_go_core='cd ~/www/opz/productz/biz9/biz9-core';
+alias 9_go_web='cd ~/www/opz/productz/biz9/biz9-web';
+alias 9_go_cms='cd ~/www/opz/productz/biz9/biz9-cms';
+alias 9_go_mobile='cd ~/www/opz/productz/biz9/biz9-mobile';
+alias 9_go_service='cd ~/www/opz/productz/biz9/biz9-service-mobile';
+alias 9_go_test='cd ~/www/opz/productz/biz9/biz9-test';
+alias 9_go_scriptz='cd ~/www/opz/productz/biz9/biz9-scriptz';
+alias 9_go_opz='cd ~/www/opz';
+alias 9_go_biz='cd ~/www/opz/productz/biz9';
+### USER DIR END ###
+
+### ANDROID SDK START ###
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_311/
+export PATH=${PATH}:"/usr/lib/jvm/java-11-openjdk-amd64/bin"
+export ANDROID_SDK_ROOT=~/www/opz/toolz/command_line_tools_jan_2022/cmdline-tools/bin
+export ANDROID_HOME=~/www/opz/toolz/command_line_tools_jan_2022/cmdline-tools/bin
+export sdk_root=~/www/opz/toolz/command_line_tools_jan_2022/cmdline-tools/bin
+export PATH=${PATH}:${ANDROID_SDK_ROOT}
+export GRADLE_HOME=/opt/gradle
+export PATH=${PATH}:${GRADLE_HOME}/bin
+export ORG_GRADLE_PROJECT_cdvMinSdkVersion=20
+### ANDROID SDK END ###
+
+source ${HOME}/www/opz/productz/doqbox/toolz/shortcutz/doqbox_bashrc

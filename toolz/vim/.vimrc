@@ -1,7 +1,7 @@
 execute pathogen#infect()
 set nocompatible
-let &runtimepath.=',/usr/share/vim/vim81'
-let $VIMRUNTIME = "/usr/share/vim/vim81"
+let &runtimepath.=',/usr/share/vim/vim82'
+let $VIMRUNTIME = "/usr/share/vim/vim82"
 syntax on
 " Enable syntax highlighting
 syntax enable "not working on windows

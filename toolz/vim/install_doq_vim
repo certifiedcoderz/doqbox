@@ -1,0 +1,14 @@
+### ==========================================
+# Title: DOQBox VIM Install
+# Author: #Certified CoderZ
+# Date:   12 Jan 2022
+### ==========================================
+
+cp -rf .vimrc ~/
+cp -rf autoload view backup bundle colors ~/.vim/
+
+echo '##############'
+echo "ELEVATED!!!"
+echo '##############'
+
+exit

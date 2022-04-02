@@ -1,5 +1,5 @@
 ### ==========================================
-# Title: DOQBox Bashrc File
+# Title: DOQBox Keyboard ShortcutZ
 # Author: #Certified CoderZ
 # Date:   6 Jan 2022
 ### ==========================================
@@ -42,7 +42,8 @@ alias 9_open_calendar='cal -A 5';
 alias 9_git_init='bash ${SCRIPT_DIR}/dq_git_init.sh';
 alias 9_git_config='bash ${SCRIPT_DIR}/dq_git_config.sh';
 alias 9_git_commit='bash ${SCRIPT_DIR}/dq_git_commit.sh';
-alias 9_git_push='bash ${SCRIPT_DIR}/dq_git_push.sh';
+alias 9_git_push_branch='bash ${SCRIPT_DIR}/dq_git_push_branch.sh';
+alias 9_git_push_master='bash ${SCRIPT_DIR}/dq_git_push_master.sh';
 alias 9_git_pull='bash ${SCRIPT_DIR}/dq_git_pull.sh';
 alias 9_git_reset='bash ${SCRIPT_DIR}/dq_git_reset_cache.sh';
 ### ALIAS GIT END ###
@@ -58,6 +59,8 @@ alias 9_ec2_test_push='bash ${SCRIPT_DIR}/dq_ec2_test_push.sh';
 alias 9_mongo_dump='bash ${SCRIPT_DIR}/dq_mongo_dump.sh';
 alias 9_mongo_list_dump='bash ${SCRIPT_DIR}/dq_mongo_list_dump.sh';
 alias 9_mongo_restore='bash ${SCRIPT_DIR}/dq_mongo_restore.sh';
+alias 9_mongo_biz9-mobile_mongo_install='bash ${SCRIPT_DIR}/dq_mongo_biz9-mobile_mongo_install.sh';
+alias 9_mongo_biz9-mobile_mongo_dump='bash ${SCRIPT_DIR}/dq_mongo_biz9-mobile_mongo_dump.sh';
 alias 9_mongo_shell='mongo --shell --port 27019';
 alias 9_mongo_start="sudo mongod --fork --config /etc/mongod.conf"
 ### ALIAS EC2 END ###
@@ -83,6 +86,8 @@ alias 9_test_server_ping='bash kit_run_app server_ping'
 alias 9_test_server_mail_send='bash kit_run_app server_mail_send'
 alias 9_test_run='bash kit_run_app run'
 alias 9_test_app_bucket_update='bash kit_run_app app_bucket_update'
+alias 9_test_get_page='bash kit_run_app app_page_get'
+alias 9_test_get_sub_page='bash kit_run_app app_page_sub_get'
 
 alias 9_test_mongo_connect='bash kit_run_mongo test_mongo_connect'
 alias 9_test_mongo_flush='bash kit_run_mongo test_mongo_flush'
@@ -105,6 +110,11 @@ alias 9_test_mongo_insert_list='bash kit_run_mongo test_mongo_insert_list'
 alias 9_test_mongo_delete_sql='bash kit_run_mongo test_mongo_delete_sql'
 alias 9_test_mongo_delete_item='bash kit_run_mongo test_mongo_delete_item'
 ### ALIAS TEST END ###
+
+### ALIAS ANDROID START ###
+alias 9_android_apk_push='bash ${SCRIPT_DIR}/dq_android_apk_push.sh';
+### ALIAS ANDROID END ###
+
 
 ### OTHER START ###
 set bell-style none

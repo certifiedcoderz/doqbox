@@ -1,0 +1,10 @@
+APP_VERSION='0.1.8'
+APP_ID='0'
+APP_ID=''
+APP_TITLE_ID='doqboxvim'
+REPO_TITLE='git@github.com:bossappz/doqboxvim.git'
+EC2_IP_ADDR=-
+EC2_DEPLOY_DIR=/home/admin/www/web
+EC2_KEY_FILE=../other/aws/ec2_key/0.pem
+MONGO_PORT=27019
+PROJECT_ROOT=''

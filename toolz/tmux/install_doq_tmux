@@ -1,0 +1,13 @@
+### ==========================================
+# Title: DOQBox TMUX Install
+# Author: #Certified CoderZ
+# Date:   12 Jan 2022
+### ==========================================
+
+cp -rf .tmux/.tmux.conf   .tmux/.tmux.conf.local  ~/
+
+echo '##############'
+echo "ELEVATED!!!"
+echo '##############'
+
+exit

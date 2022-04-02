@@ -14,8 +14,19 @@ echo "Are you sure you want to push?"
 read n
 yes=$(echo $n | tr -s '[:upper:]' '[:lower:]')
 if [[  "$n" = "yes"  ]] ; then
-    git push -f ${REPO_TITLE} master
-else
+
+    ##
+    git branch ${APP_VERSION}
+    git switch ${APP_VERSION}
+
+    ##
+    git push -f ${REPO_TITLE} ${APP_VERSION}
+
+    ##
+    #git checkout ${APP_VERSION}
+    #git switch ${APP_VERSION}
+
+    else
     echo "exit"
 fi
 

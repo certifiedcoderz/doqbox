@@ -20,8 +20,8 @@ player mplayer
 refresh-on-startup yes
 reload-time 20
 reload-threads 2
-show-read-articles no
-show-read-feeds no
+show-read-articles yes
+show-read-feeds yes
 
 
 # binds ----------------------------------------------------------------
@@ -50,7 +50,7 @@ highlight articlelist "^  *[0-9]+  *N  "                    color156 default
 highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     color21  default
 highlight article     "(^Link:.*|^Date:.*)"                 color21  default
 highlight article     "^Podcast Download URL:.*"            color71  default
-highlight article     "^Links:"                             white    color240 underline
+highlight article     "^Links:"                             green    color240 underline
 highlight article     "\\[[0-9][0-9]*\\]"                   color72  default  bold
 highlight article     "\\[image [0-9][0-9]*\\]"		        color72  default  bold
 highlight article     "\\[embedded flash: [0-9][0-9]*\\]"   color72  default  bold

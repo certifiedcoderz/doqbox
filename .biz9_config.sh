@@ -1,10 +1,10 @@
-APP_VERSION='3.6.4'
-APP_ID='-'
-APP_ID='DOQBox'
-APP_TITLE_ID='doqbox'
-REPO_TITLE='git@github.com:certifiedcoderz/doqbox_old.git'
-EC2_IP_ADDR=44.201.39.179
+APP_VERSION='0.1.6'
+APP_ID='0'
+APP_TITLE='DOQBox'
+APP_TITLE_ID='0'
+REPO_TITLE='git@github.com:certifiedcoderz/doqbox.git'
+EC2_IP_ADDR=0.00.000.000
 EC2_DEPLOY_DIR=/home/admin/www/web
-EC2_KEY_FILE=../other/aws/ec2_key/12.pem
+EC2_KEY_FILE=other/aws/ec2_key/_app_id_.pem
 MONGO_PORT=27019
 PROJECT_ROOT=''

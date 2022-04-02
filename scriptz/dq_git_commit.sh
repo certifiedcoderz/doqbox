@@ -29,11 +29,12 @@ APP_TITLE_ID=$APP_TITLE_ID;
 echo 'enter code commit noteZ'
 read commit_notes
 
-git add -A .
-git commit -m  "${commit_notes}"
-
 sed -i "s/APP_VERSION=.*/APP_VERSION='${APP_VERSION_NEW}'/" .biz9_config.sh
 sed -i "s/G_APP_VERSION=.*/G_APP_VERSION='${APP_VERSION_NEW}'/" ${PROJECT_ROOT}app.js
+
+
+git add -A .
+git commit -m  "${commit_notes}"
 
 echo '##############'
 echo "NEW APP VERSION:" ${APP_VERSION_NEW}
