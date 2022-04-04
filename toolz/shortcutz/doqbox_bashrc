@@ -121,4 +121,7 @@ alias 9_android_apk_push='bash ${SCRIPT_DIR}/dq_android_apk_push.sh';
 set bell-style none
 xset b off # turn beep sound off
 echo xset b off >> ~/.xession # turn beep sound off 2
+TERM="xterm"
+export TERM
 ### OTHER END ###
+
