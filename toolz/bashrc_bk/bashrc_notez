@@ -30,3 +30,4 @@ export ORG_GRADLE_PROJECT_cdvMinSdkVersion=20
 ### ANDROID SDK END ###
 
 source ${HOME}/www/opz/productz/doqbox/toolz/shortcutz/doqbox_bashrc
+
