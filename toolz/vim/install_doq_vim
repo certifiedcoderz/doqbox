@@ -4,6 +4,7 @@
 # Date:   12 Jan 2022
 ### ==========================================
 
+mkdir ~/.vim
 cp -rf .vimrc ~/
 cp -rf autoload view backup bundle colors ~/.vim/
 
