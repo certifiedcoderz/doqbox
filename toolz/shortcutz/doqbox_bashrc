@@ -60,8 +60,6 @@ alias 9_ec2_test_push='bash ${SCRIPT_DIR}/dq_ec2_test_push.sh';
 alias 9_mongo_dump='bash ${SCRIPT_DIR}/dq_mongo_dump.sh';
 alias 9_mongo_list_dump='bash ${SCRIPT_DIR}/dq_mongo_list_dump.sh';
 alias 9_mongo_restore='bash ${SCRIPT_DIR}/dq_mongo_restore.sh';
-alias 9_mongo_biz9-mobile_mongo_install='bash ${SCRIPT_DIR}/dq_mongo_biz9-mobile_mongo_install.sh';
-alias 9_mongo_biz9-mobile_mongo_dump='bash ${SCRIPT_DIR}/dq_mongo_biz9-mobile_mongo_dump.sh';
 alias 9_mongo_shell='mongo --shell --port 27019';
 alias 9_mongo_start="sudo mongod --fork --config /etc/mongod.conf"
 ### ALIAS EC2 END ###
